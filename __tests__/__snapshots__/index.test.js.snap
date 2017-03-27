@@ -1,7 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Choices renders correctly 1`] = `null`;
-
 exports[`Question renders correctly 1`] = `null`;
 
 exports[`Start renders correctly 1`] = `
