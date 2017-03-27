@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Results renders correctly 1`] = `
-<h2>
-  You scored undefined out of undefined. undefined
-</h2>
-`;

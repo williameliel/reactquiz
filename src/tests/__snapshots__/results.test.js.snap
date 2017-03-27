@@ -1,0 +1,5 @@
+exports[`test Results renders correctly 1`] = `
+<h2>
+  You scored undefined out of undefined. undefined
+</h2>
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Start from '../src/components/Start';
-import Question from '../src/components/Question';
+import Start from '../components/Start';
+import Question from '../components/Question';
 
 import renderer from 'react-test-renderer';
 

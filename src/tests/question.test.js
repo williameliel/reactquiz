@@ -1,10 +1,10 @@
 import React from 'react';
-import Start from '../src/components/Start';
+import Question from '../components/Question';
 import renderer from 'react-test-renderer';
 
-it('Start renders correctly', () => {
+it('Question renders correctly', () => {
   const tree = renderer.create(
-    <Start />
+    <Question />
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
