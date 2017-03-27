@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
 import Start from './components/Start';
 import Question from './components/Question';
 import Results from './components/Results';
+
 
 class App extends Component {
     
@@ -24,9 +26,9 @@ class App extends Component {
     /* fetches json file from data folder */
     loadQuiz() {
 
-        fetch("./data/quiz.json")
+        fetch("./services/api/quiz.json")
             .then(response => response.json())
-            .then(json =>
+            .then(json => 
                 this.setState({
                     quiz: json
                 })
@@ -77,8 +79,6 @@ class App extends Component {
     /* Delivers results to user */
     handleVerdict() {
        
-        var verdict = '';
-
         if (this.state.score <= this.state.quiz.questions.length / 2) {
             return 'SAD!';
         } else {
@@ -108,7 +108,7 @@ class App extends Component {
 
           <Start 
             title={this.state.quiz.title}
-            description ={this.state.quiz.description}
+            description={this.state.quiz.description}
             handleStart={ () => this.setState( {'current_step' : 0} ) } />
 
         );
@@ -126,8 +126,9 @@ class App extends Component {
     }
 
     render() {
+        
         /* If state has not been updated... */
-        if (!this.state.quiz || this.state.quiz === []) {
+        if (!this.state.quiz || this.state.quiz === [] || this.state.quiz.length === 0) {
             return <div>Loading...</div>;
         }
         /* Handle / render the results of the quiz */
@@ -150,4 +151,4 @@ class App extends Component {
 
 }
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+ReactDOM.render(<App />, document.getElementById('root'));
