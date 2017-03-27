@@ -9,7 +9,7 @@ npm install
 ```
 To run the development server:
 ```sh
-npm start
+npm run start
 ```
 To build the production-ready app:
 ```sh
@@ -17,7 +17,7 @@ npm run build
 ```
 To run tests:
 ```sh
-npm test
+npm run test
 ```
 ### Compatability
 This program is written in ES6 and React and Webpack module bundler environment.
