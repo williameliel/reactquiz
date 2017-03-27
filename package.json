@@ -1,0 +1,31 @@
+{
+  "name": "reactquiz",
+  "version": "1.0.0",
+  "description": "Simple quiz",
+  "main": "index.js",
+  "repository": "",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "jest -u"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "enzyme": "^2.8.0",
+    "jest": "^19.0.2",
+    "react-test-renderer": "^15.4.2",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.22.0",
+    "react": "^15.4.2",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

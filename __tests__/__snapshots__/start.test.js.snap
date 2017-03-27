@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start renders correctly 1`] = `
+<div>
+  <h2 />
+  <p />
+  <button
+    className="btn btn-default"
+    onClick={undefined}
+  >
+    Start
+  </button>
+</div>
+`;
